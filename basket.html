@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>BASKETBALL SCOREBOARD</h1>
+        <div class="container">
+            <div class="team">
+                <h2>HOME TEAM</h2>
+                <p class= "score" id="scorehome">0</p>
+                <button class="btn" id="1points" onclick="one_pointshome()">+1</button>
+                <button class="btn" id="2points" onclick="two_pointshome()">+2</button>
+                <button class="btn" id="3points" onclick="three_pointshome()">+3</button>
+            </div>
+            <div class="team">
+                <h2>AWAY TEAM</h2>
+                <p class= "score" id="scoreaway">0</p>
+                <button class="btn" id="1points" onclick="one_pointsaway()">+1</button>
+                <button class="btn" id="2points" onclick="two_pointsaway()">+2</button>
+                <button class="btn" id="3points" onclick="three_pointsaway()">+3</button>
+            </div>
+        </div>
+        <br>
+        <div class="options">
+            <button class="reset" id="resetbtn" onclick="resetScore()">RESET SCORE </button>
+        </div>
+        <script src="basket.js"></script>
+</body>
